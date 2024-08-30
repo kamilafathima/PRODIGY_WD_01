@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Kebab Restaurent</title>
+    <link rel="icon" href="images/kebab.jpg">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="images_kebab/kebab.jpg">
+        <div>
+            <ul class="navlist">
+                <li><a href="#" onclick="home()">Home</a></li>
+                <li><a href="#" onclick="menu()">Menu</a></li>
+                <li><a href="#" onclick="specials()">Specials</a></li>
+                <li><a href="#" onclick="contact()">Contact</a></li>
+                <li style="margin-right: 20px;"><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+            
+        </div>
+       
+
+        <div class="menu_toggle">
+            <p onclick="show_navbar()">
+                
+                <i class="fa-solid fa-bars"></i>
+                
+            </p>
+
+        </div>
+
+    </div>
+    <div class="side_navbar">
+        <p style="text-align: right; padding:12px;" onclick="close_navbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div>
+            <ul class="side_navlist">
+                <li><a href="#" onclick="home()">Home</a></li>
+                <li><a href="#" onclick="menu()">Menu</a></li>
+                <li><a href="#" onclick="specials()">Specials</a></li>
+                <li><a href="#" onclick="contact()">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!--Header-->
+
+    <div class="header" id="home">
+        <div>
+            <h1>ENJOY THE TASTE OF KABAB</h1>
+            <p style="margin-top: 10px;">Don't wait! its time to put your taste buds into action. Let's Go!! </p>
+            <button class="button">ORDER NOW</button>
+        </div>
+
+        <div class="kebab">
+            <img src="images_kebab/kabab.webp" style="border-radius:90px;">
+        </div>
+    </div>
+    <!--Specials-->
+    <div style="padding: 20px;">
+        <center>
+            <h2 id="specials">------SPECIALS------</h2>
+        </center>
+
+        <div class="Specials">
+
+            <div class="specials_container-1">
+                <div>
+                    <img src="images_kebab/chicken_burger.png">
+                    <center>
+                        <h5>Istambul style wet burger</h5>
+                    </center>
+                    <p></p>
+                    <center><b>$25.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-2">
+                <div>
+                    <img src="images_kebab/falafel.png" height="170px" width=190px">
+                    <h5>
+                        <center>Turkish Falafel</center>
+                    </h5>
+                    <p>
+                        <center><b>$20.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-3">
+                <div>
+                    <img src="images_kebab/kebab_platter.png">
+                    <center>
+                        <h5>Yummy delecious kabab platter</h5>
+                    </center>
+                    <p>
+                        <center><b>$50.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-4">
+                <div>
+                    <img src="images_kebab/chicken lule kebab.png">
+                    <center>
+                        <h5>Chicken Lule Kebab</h5>
+                    </center>
+                    <p>
+                        <center><b>$55.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Menu-->
+    <div style="padding: 20px;" >
+        <center >
+            <h2 id="menu">------MENU------</h2>
+        </center>
+
+        <div class="Specials" >
+            <div class="specials_container-1">
+                <div>
+                    <img src="images_kebab/chicken_drumstick_kebab.png" height="192px" width="250px">
+                    <center>
+                        <h5>Chicken Drumstick Kebab</h5>
+                    </center>
+                    <p></p>
+                    <center><b>$35.0</b></center>
+    
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-2">
+                <div>
+                    <img src="images_kebab/chicken_shish_kebab.png">
+                    <center>
+                        <h5>Chicken Shish Kebab</h5>
+                    </center>
+                    <p></p>
+                    <center><b>$25.0</b></center>
+                    </p>
+                    
+                    <button class="button">ADD TO CART</button>
+                    
+                </div>
+            </div>
+            <div class="specials_container-3">
+                <div>
+                    <img src="images_kebab/chicken_kebab_roll.png">
+                    <center>
+                        <h5>Chicken kebab Roll</h5>
+                    </center>
+                    <p></p>
+                    <center><b>$25.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-4">
+                <div>
+                    <img src="images_kebab/patlican_kebab.png">
+                    <center>
+                        <h5>Patlican Kebab</h5>
+                    </center>
+                    <p></p>
+                    <center><b>$30.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="specials_container-5">
+                <div>
+                    <img src="images_kebab/chicken_burger.png">
+                    <center>
+                        <h5>Istambul style wet burger</h5>
+                    </center>
+                    <p></p>
+                    <center><b>$25.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-6">
+                <div>
+                    <img src="images_kebab/falafel.png" height="170px" width=190px">
+                    <h5>
+                        <center>Turkish Falafel</center>
+                    </h5>
+                    <p>
+                        <center><b>$20.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-7">
+                <div>
+                    <img src="images_kebab/kebab_platter.png">
+                    <center>
+                        <h5>Yummy delecious kabab platter</h5>
+                    </center>
+                    <p>
+                        <center><b>$50.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="specials_container-8">
+                <div>
+                    <img src="images_kebab/chicken lule kebab.png">
+                    <center>
+                        <h5>Chicken Lule Kebab</h5>
+                    </center>
+                    <p>
+                        <center><b>$55.0</b></center>
+                    </p>
+                    <button class="button">ADD TO CART</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class=customer_service>
+
+        <center>
+            <h2>We Always Provide You The Best</h2>
+        </center>
+        <div class="Service">
+            <div>
+                <center>
+                    <p>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </p>
+                </center>
+                <center>
+                    <h4>Choose Food</h4>
+                </center>
+
+            </div>
+            <div>
+                <center>
+                    <p>
+                        <i class="fa-solid fa-burger"></i>
+                        <center>
+                            <h4>Place Order</h4>
+                        </center>
+                    </p>
+                </center>
+
+            </div>
+            <div>
+                <center>
+                    <p>
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </p>
+                </center>
+                <center>
+                    <h4>Free Delivery</h4>
+                </center>
+            </div>
+
+            <!--Contact-->
+
+
+        </div>
+    </div>
+    <div class="Contact_Us" > <center>
+        <h2>Contact US</h2>
+        </center>
+        <center> <img src="images_kebab/kebab.jpg"></center></div>F
+
+
+        <div class="Contact" id="contact">
+
+            <div class="Footer">
+
+                <h4>FIND US</h4>
+                <p>121,Rock Street</p>
+                <p>New York,NY</p>
+                <p>92103-9000</p>
+            </div>
+
+            <div class="Footer">
+
+                <h4>HOURS</h4>
+                <p>Monday-Sunday</p>
+                <p>10am-9pm</p>
+
+            </div>
+            <div class="Footer">
+
+                <h4>Call Us</h4>
+                <p>+1(234)567-891</p>
+
+
+            </div>
+
+        </div>
+
+
+
+        <script src="responsive.js"></script>
+
+
+</body>
+
+</html>
